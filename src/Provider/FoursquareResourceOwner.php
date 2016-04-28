@@ -52,6 +52,16 @@ class FoursquareResourceOwner implements ResourceOwnerInterface
     }
 
     /**
+     * Get user canonical url
+     *
+     * @return string|null
+     */
+    public function getCanonicalUrl()
+    {
+        return $this->getResponseData('user.canonicalUrl');
+    }
+
+    /**
      * Get user email
      *
      * @return string|null
